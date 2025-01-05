@@ -1,6 +1,6 @@
 package graph
 
-import java.util.PriorityQueue
+import java.util.*
 
 /**
  * Data class representing an edge in the graph.

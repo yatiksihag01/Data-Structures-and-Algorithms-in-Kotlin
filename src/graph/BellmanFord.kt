@@ -33,7 +33,8 @@ fun bellmanFord(edges: List<List<Int>>, totalNodes: Int): IntArray {
     for (edge in edges) {
         val (source, destination, weight) = edge
         if (distances[source] != Int.MAX_VALUE &&
-            distances[source] + weight < distances[destination]) {
+            distances[source] + weight < distances[destination]
+        ) {
             throw IllegalArgumentException("The graph contains a negative weight cycle.")
         }
     }

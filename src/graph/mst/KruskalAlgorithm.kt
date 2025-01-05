@@ -51,11 +51,13 @@ class KruskalAlgorithm {
 
         for (i in indices) {
             for (neighbour in this[i]) {
-                edges.add(EdgeSet(
-                    parent = i,
-                    node = neighbour.first,
-                    weight = neighbour.second,
-                ))
+                edges.add(
+                    EdgeSet(
+                        parent = i,
+                        node = neighbour.first,
+                        weight = neighbour.second,
+                    )
+                )
             }
 
         }

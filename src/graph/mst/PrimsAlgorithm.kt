@@ -1,6 +1,6 @@
 package graph.mst
 
-import java.util.PriorityQueue
+import java.util.*
 
 /**
  * Computes the Minimum Spanning Tree (MST) of a graph using Prim's algorithm.

@@ -1,8 +1,6 @@
 package graph
 
-import java.util.LinkedList
-import java.util.Queue
-import kotlin.collections.indices
+import java.util.*
 
 class Graph {
 
@@ -209,14 +207,14 @@ class Graph {
 fun main() {
     val graph = Graph()
     val adj = listOf(
-        listOf(0,1,1,0,0,0,0,0),
-        listOf(1,0,0,1,0,1,0,0),
-        listOf(1,0,0,0,1,0,0,0),
-        listOf(0,1,0,0,1,1,0,0),
-        listOf(0,0,1,1,0,0,0,0),
-        listOf(0,1,0,1,0,0,0,0),
-        listOf(0,0,0,0,0,0,0,1),
-        listOf(0,0,0,0,0,0,1,0),
+        listOf(0, 1, 1, 0, 0, 0, 0, 0),
+        listOf(1, 0, 0, 1, 0, 1, 0, 0),
+        listOf(1, 0, 0, 0, 1, 0, 0, 0),
+        listOf(0, 1, 0, 0, 1, 1, 0, 0),
+        listOf(0, 0, 1, 1, 0, 0, 0, 0),
+        listOf(0, 1, 0, 1, 0, 0, 0, 0),
+        listOf(0, 0, 0, 0, 0, 0, 0, 1),
+        listOf(0, 0, 0, 0, 0, 0, 1, 0),
     )
 
     graph.breadthFirstSearch(adj, 8, 0) {
@@ -228,13 +226,13 @@ fun main() {
 
 
     val adjList = listOf(
-        listOf(1,2),
+        listOf(1, 2),
         listOf(4),
-        listOf(0,3,5),
+        listOf(0, 3, 5),
         listOf(2),
-        listOf(1,6),
-        listOf(2,6),
-        listOf(4,5),
+        listOf(1, 6),
+        listOf(2, 6),
+        listOf(4, 5),
     )
 
     println("The given graph is ${if (graph.isCyclicDFS(adjList, 0)) "" else "not "}cyclic.")
